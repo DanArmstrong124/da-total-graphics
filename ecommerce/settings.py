@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'accounts',
     'products',
+    'cart',
+
 ]
 
 MIDDLEWARE = [
@@ -60,7 +62,11 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'templates'
+            'templates',
+            'accounts/templates',
+            'ecommerce/templates',
+            'cart/templates',
+            'products/templates'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -70,6 +76,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
+                'cart.contexts.cart_contents',
             ],
         },
     },
