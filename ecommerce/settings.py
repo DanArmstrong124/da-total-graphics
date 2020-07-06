@@ -15,18 +15,17 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'o5eko3a)glo#*0!q739-4e578dqv*kjtjmndsrozvaf-fo+(cm'
+SECRET_KEY = '!ogjrj_x@cc9sj=!)znrdy1pf2=e6cmr0k#%e9z4t4xqg$3is='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8080-f833771b-75a0-47da-b24b-3ddc3c5cc933.ws-eu01.gitpod.io'
+    '8080-a9a8ae08-24b7-4de6-a089-7a99a6c17a3f.ws-eu01.gitpod.io'
 ]
 
 
@@ -43,7 +42,7 @@ INSTALLED_APPS = [
     'accounts',
     'products',
     'cart',
-
+    'checkout',
 ]
 
 MIDDLEWARE = [
@@ -112,6 +111,11 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
+]
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'accounts.backends.EmailAuth'
 ]
 
 
