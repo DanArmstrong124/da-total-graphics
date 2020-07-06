@@ -25,7 +25,9 @@ SECRET_KEY = 'o5eko3a)glo#*0!q739-4e578dqv*kjtjmndsrozvaf-fo+(cm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '8080-f833771b-75a0-47da-b24b-3ddc3c5cc933.ws-eu01.gitpod.io'
+]
 
 
 # Application definition
@@ -123,3 +125,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
