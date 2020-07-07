@@ -145,7 +145,7 @@ USE_TZ = True
 
 AWS_S3_OBJECT_PARAMETERS = {
     'Expires': 'Fri, 10 Jan 2100 20:00:00 GMT',
-    'CacheControl': 'max-age=999999999',
+    'CacheControl': 'max-age=999999',
 }
 
 AWS_STORAGE_BUCKET_NAME = 'da-total-graphics'
