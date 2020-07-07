@@ -76,3 +76,19 @@ caption p {
     margin-left: auto;
     margin-right: auto;
 }
+
+.margin-left-auto {
+    margin-left: auto;
+}
+
+.margin-right-auto {
+    margin-right: auto;
+}
+
+.anti-padding {
+    padding: 0px;
+}
+
+.tac {
+    text-align: center;
+}
