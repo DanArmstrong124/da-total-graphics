@@ -26,7 +26,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8080-f833771b-75a0-47da-b24b-3ddc3c5cc933.ws-eu01.gitpod.io'
+    '8080-f833771b-75a0-47da-b24b-3ddc3c5cc933.ws-eu01.gitpod.io',
+    'da-total-graphics.herokuapp.com'
 ]
 
 
