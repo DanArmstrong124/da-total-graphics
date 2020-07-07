@@ -68,7 +68,8 @@ TEMPLATES = [
             'accounts/templates',
             'ecommerce/templates',
             'cart/templates',
-            'products/templates'
+            'products/templates',
+            'home/templates'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
