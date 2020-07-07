@@ -13,7 +13,7 @@
         <div class="product-area">
         <h3>{{ product.name }}</h3>
         <p class="product-description">{{ product.description }}</p>
-        <p>{{ product.price }}</p>
+        <p><i class="fa fa-gbp"></i> {{ product.price }}</p>
         </div>
 
         <form method="post" action="{% url 'add_to_cart' product.id %}">
