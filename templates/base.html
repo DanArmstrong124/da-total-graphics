@@ -45,7 +45,7 @@
                     {% endif %}
                     <form action="{% url 'search' %}'" method="get">
                 <input type="text" name="q">
-                <button type="search" class="btn btn-success"><i class="fa fa-search"></i> Search</button>
+                <button type="search" class="btn"><i class="fa fa-search"></i> Search</button>
             </form>
                 </div>
             </div>
@@ -58,12 +58,6 @@
         {% endfor %}
     </div>
     {% endif %}
-
-    <div class="container" style="padding-left:207px;">
-        <div class="display">
-            
-        </div>
-    </div>
 
     {% block page_content %}
 
