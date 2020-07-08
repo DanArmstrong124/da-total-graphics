@@ -92,3 +92,8 @@ caption p {
 .tac {
     text-align: center;
 }
+
+.product-img-margin{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
