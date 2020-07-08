@@ -18,15 +18,15 @@
 <form action="https://formspree.io/mjvaalqy" method="POST">
   <div class="form-group col-xs-12 col-md-6 offset-md-3">
     <label for="form-name">Full Name</label>
-    <input type="text" class="form-control" id="form-name" placeholder="John Smith" required>
+    <input type="text" class="form-control" id="form-name" placeholder="John Smith" name="form-name" required>
   </div>
   <div class="form-group col-xs-12 col-md-6 offset-md-3">
     <label for="form-email">Email address</label>
-    <input type="email" class="form-control" id="form-email" placeholder="name@example.com" required>
+    <input type="email" class="form-control" id="form-email" placeholder="name@example.com" name="form-email" required>
   </div>
   <div class="form-group col-xs-12 col-md-6 offset-md-3">
     <label for="form-reason">Reason</label>
-    <select class="form-control" id="form-reason" required>
+    <select class="form-control" id="form-reason" name="form-reason" required>
       <option selected disabled>Select One</option>
       <option>Looking to purchase</option>
       <option>Where's my order?</option>
@@ -36,7 +36,7 @@
   </div>
   <div class="form-group col-xs-12 col-md-6 offset-md-3">
     <label for="form-comment">Comment</label>
-    <textarea class="form-control" id="form-comment" rows="3" required></textarea>
+    <textarea class="form-control" id="form-comment" rows="3" name="form-comment" required></textarea>
   </div>
   <div class="tac product-centering btn-centering">
     <button class="btn btn-success">Submit</button>
