@@ -7,7 +7,7 @@
 
 <div class="contact-head">
 
-    <div class="product-centering">
+    <div class="product-centering tac">
         <h1>Contact us</h1>
         <p>Remember you can always press our live chat button found bottom right!</p>
     </div>
@@ -16,15 +16,15 @@
 
 <!--  Contact Form  -->
 <form action="https://formspree.io/mjvaalqy" method="POST">
-  <div class="form-group">
+  <div class="form-group col-xs-12 col-md-6 offset-md-3">
     <label for="form-name">Full Name</label>
     <input type="text" class="form-control" id="form-name" placeholder="John Smith" required>
   </div>
-  <div class="form-group">
+  <div class="form-group col-xs-12 col-md-6 offset-md-3">
     <label for="form-email">Email address</label>
     <input type="email" class="form-control" id="form-email" placeholder="name@example.com" required>
   </div>
-  <div class="form-group">
+  <div class="form-group col-xs-12 col-md-6 offset-md-3">
     <label for="form-reason">Reason</label>
     <select class="form-control" id="form-reason" required>
       <option selected disabled>SELECT ONE</option>
@@ -34,10 +34,11 @@
       <option>Other (Please specify in comment)</option>
     </select>
   </div>
-  <div class="form-group">
+  <div class="form-group col-xs-12 col-md-6 offset-md-3">
     <label for="form-comment">Comment</label>
     <textarea class="form-control" id="form-comment" rows="3" required></textarea>
   </div>
+  <button class="btn btn-success">Submit</button>
 </form>
 
 {% endblock %}
