@@ -6,7 +6,7 @@
 
 {% block page_content %}
 
-
+    {% if total > 0 %}
     {% for item in cart_items %}
 
 <div class="row row-flex">
@@ -37,6 +37,9 @@
     </div>
 </div>
     {% endfor %}
+    {% else %}
+    <div class="tac"><h3>Your cart is empty!</h3></div>
+    {% endif %}
 <div class="row">
     <a href="{% url 'checkout' %}" class="margin-left-right-auto btn btn-success" role="button"><span aria-hidden="true"><i class="fa fa-money"></i> Checkout  -  </span>
     <span aria-hidden="true"><i class="fa fa-gbp"></i><strong>{{ total }}</strong></span>
