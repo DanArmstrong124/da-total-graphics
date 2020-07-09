@@ -241,6 +241,8 @@ Tested by friends and family - Results: All Positive
     6. Press view site.
     7. Verify the product has been added.
 
+Tested by friends and family - Results: All Positive
+
 16. Remove Products:
     1. Sign into admin account.
     2. Go to admin dashboard in navbar.
@@ -249,6 +251,8 @@ Tested by friends and family - Results: All Positive
     5. Select delete.
     6. Press view site.
     7. Verify the product has been removed.
+
+Tested by friends and family - Results: All Positive
 
 17. Edit Products:
     1. Sign into admin account.
@@ -259,6 +263,8 @@ Tested by friends and family - Results: All Positive
     6. Press save.
     7. Press view site.
     8. Verify the product has been adjusted.
+
+Tested by friends and family - Results: All Positive
 
 ### Automated Build Tests
 
