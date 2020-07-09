@@ -147,11 +147,89 @@ I created a mobile design mockup and a desktop design mockup ofthe websites whic
 
 ### User Tests
 
-1. Contact form:
+1. Create an account form:
+    1. Go to "Register"
+    2. Hit submit to see if you get a verified message.
+    3. Fill in form and submit to see if you get a verified message.
+
+Tested by friends and family - Results: All Positive
+
+2. Sign out:
+    1. Go to "Sign out"
+    2. Verify that you can now see Register and Sign in.
+
+Tested by friends and family - Results: All Positive
+# FAILED
+3. Reset password:
+    1. Go to 'Login'
+    2. Press 'Forgotten password'
+    3. Enter email
+# FAILED
+
+4. Sign in:
+    1. Go to "Login"
+    2. Press Login with empty values, verify an error message.
+    3. Fill in your details, press enter and verify you are signed in.
+
+Tested by friends and family - Results: All Positive
+
+5. View profile:
+    1. Go to "Profile"
+    2. Verify that it is your username and your last login.
+
+Tested by friends and family - Results: All Positive
+
+6. View products:
+    1. Go to "All Products"
+    2. Verify you can see the products.
+
+Tested by friends and family - Results: All Positive
+
+7. Search for a product:
+    1. Use the search bar found in the navigation bar.
+    2. Search for a keyword such as "Sport".
+    3. Verify you can see the product singled out.
+
+Tested by friends and family - Results: All Positive
+
+8. Add to basket:
+    1. Go to "All Products"
+    2. Select the quantity bar of a product.
+    3. Enter an amount and press add to cart.
+    4. Verify in nav bar you have a badge with a number of products next to your cart.
+
+Tested by friends and family - Results: All Positive
+
+9. Adjust cart:
+    1. Go to "Cart"
+    2. Select your product quantity.
+    3. Adjust the product quantity up and press button.
+    4. Verify quantity has been adjusted.
+
+Tested by friends and family - Results: All Positive
+
+12. Checkout Form:
+    1. Go to "Checkout" through "Cart"
+    2. Leave forms empty and submit. Verify that you have error messages.
+    3. Fill in forms with Stripe Default( 4242424242424242 & 111) choose a date for expiry number and submit.
+    4. Verify the purchase message.
+
+Tested by friends and family - Results: All Positive
+
+13. Contact form:
     1. Go to the "Contact Us" page
     2. Try to submit the empty form and verify that an error message about the required fields appears
     3. Try to submit the form with an invalid email address and verify that a relevant error message appears
     4. Try to submit the form with all inputs valid and verify that a success message appears.
+    5. Press go back to original site.
+
+Tested by friends and family - Results: All Positive
+
+14. Live chat:
+    1. Press live chat button.
+    2. Attempt to leave a message.
+
+Tested by friends and family - Results: All Positive
 
 ### Automated Build Tests
 
@@ -173,27 +251,27 @@ All of my Travis tests are passing as seen in this README.md
 
 ## Deployment
 
+- I started my deployment process through gitpods previews, I would preview my code every git push to ensure that it was all running smoothly.
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+- I started to then run my application using 'python3 manage.py runserver $IP:$PORT' this ran my application and allowed me to view my site in a browser tab.
 
-1. Previews
-2. Running Locally
-3. Setting Variables to Heroku
-4. Setting up automatic deployments with GitHub
-4. Hosting on Heroku with automatic repository pulls through github
+- I made the application public to allow my friends and family to test my website whilst I had it running.
+
+- I set up a heroku application and set all of my environmental variables into the config variables on heroku.
+
+- I connected my heroku application to my github repository, allowing me to enable automatic deployments through each git push.
+
+- I started hosting my website on heroku after ensuring all my databases were setup correctly.
+
+- Once I could view my live site on heroku, my deployment process was finished, I now force a deployment through heroku, or I push to github and wait for it to run its course.
 
 ## Credits
 
 ### Content
-- Any content from other sites?
-- Font Awesome
+- My icons behind certain buttons/text can be found via [FontAwesome](https://fontawesome.com/).
 
 ### Media
-- PHOTOS created by myself
+- I created all of my images for the site through [Canva](https://www.canva.com/).
 
 ### Acknowledgements
-
-- INSPO from codeinstitute
+- I received inspiration for this site through the Code Institute Milestone Project Examples.
