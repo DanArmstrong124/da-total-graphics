@@ -15,7 +15,7 @@ DA TOTAL GRAPHICS is an online store that sells logo graphics, a customer can se
 - As a customer, I want to be able to find out more on the company so I can see their background.
 - As a customer, I want to be able to search for a product by name so that I can narrow down the product results.
 - As a customer, I want to be able to access and use the site from my mobile device so that I can make purchases from remote locations.
-- As an employee, I want to be able to access a dashboard through the navbar so that I can create or add new products.
+- As an admin user, I want to be able to access a dashboard through the navbar so that I can create or add new products.
 
 I created a mobile design mockup and a desktop design mockup ofthe websites which can be found inside of the [WIREFRAMES](wireframes) folder.
 
@@ -82,7 +82,8 @@ I created a mobile design mockup and a desktop design mockup ofthe websites whic
 - - Claims copyright on the site.
 
 ### Features Left to Implement
-- FIX Reset Password & Wireframes git bug?
+- FIX Reset Password
+- Update Tests
 - CSS Customisation (ADDITIONAL)
 - README
 
@@ -230,6 +231,34 @@ Tested by friends and family - Results: All Positive
     2. Attempt to leave a message.
 
 Tested by friends and family - Results: All Positive
+
+15. Add Products:
+    1. Sign into admin account.
+    2. Go to admin dashboard in navbar.
+    3. Go to products.
+    4. Add a product.
+    5. Fill in form.
+    6. Press view site.
+    7. Verify the product has been added.
+
+16. Remove Products:
+    1. Sign into admin account.
+    2. Go to admin dashboard in navbar.
+    3. Go to products.
+    4. Select a product.
+    5. Select delete.
+    6. Press view site.
+    7. Verify the product has been removed.
+
+17. Edit Products:
+    1. Sign into admin account.
+    2. Go to admin dashboard in navbar.
+    3. Go to products.
+    4. Select a product.
+    5. Change details in product form.
+    6. Press save.
+    7. Press view site.
+    8. Verify the product has been adjusted.
 
 ### Automated Build Tests
 
