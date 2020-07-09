@@ -59,7 +59,7 @@ I created a mobile design mockup and a desktop design mockup ofthe websites whic
 - - Checkout
 - - Products
 - - Reset Password
-- - Base
+- - Base - The base template that extends to all other templates.
 
 - Home
 - - Contains the contact page and about page
@@ -88,56 +88,59 @@ I created a mobile design mockup and a desktop design mockup ofthe websites whic
 
 ## Technologies Used
 
-- [HTML]()
+- [HTML](https://en.wikipedia.org/wiki/HTML)
     - The project uses **HTML** for the front end development.
 
-- [CSS]()
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
     - The project uses **CSS** for the front end development.
 
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
 
-- [Python]()
-    -
+- [Python](https://www.python.org/)
+    - I use **Python** for my backend applications.
 
-- [Django]()
-    -
+- [Django](https://www.djangoproject.com/)
+    - I use **Django** to create applications and projects within my code.
 
-- [SQLITE3]()
-    -
+- [SQLITE3](https://www.sqlite.org/index.html)
+    - I use **SQLITE3** as a fall-back local database if my S3 AWS fails.
 
-- [S3 AWS]()
-    -
+- [S3 AWS](https://aws.amazon.com/s3/)
+    - I use **S3 AWS** for an online database.
 
-- [Bootstrap]()
-    -
+- [Bootstrap](https://getbootstrap.com/)
+    - I use **Bootstrap** for custom css and js modules.
 
-- [Stripe]()
-    -
+- [Stripe](https://stripe.com/gb)
+    - I use **Stripe** as the payment gateway for the site.
 
-- [Jinja]()
-    -
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+    - I use **Jinja** for my templates, extensions and inner html if and for loops.
 
-- [Heroku]()
-    -
+- [Heroku](https://heroku.com/)
+    - I use **Heroku** to deploy my live site to the public.
 
-- [Balsamiq]()
-    -
+- [Balsamiq](https://balsamiq.com/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI6pxTY3CSMFjqhBK9Mc7vNZZrBpNjI2EjkcVEL7T5bndyNLgDS6r98aAo4hEALw_wcB)
+    - I use **Balsamiq** to create my mobile and desktop wireframes.
 
-- [GitHub]()
-    -
+- [GitHub](https://github.com/)
+    - I use **GitHub** to deploy my code into a repository.
 
-- [GitPod]()
-    -
+- [GitPod](https://gitpod.io/)
+    - I use **GitPod** as my IDE to develop my project and show local previews of my site.
 
-- [Formspree]()
-    -
+- [Formspree](https://formspree.io/)
+    - I use **Formspree** for email integration.
 
-- [LiveChat]()
-    -
+- [LiveChatInc](https://livechatinc.com/)
+    - I use **LiveChatInc** for live chat integration.
 
-- [PyPi]()
-    - Used to install the packages required for this project into [requirements.txt]()
+- [PyPi](https://pypi.org/)
+    - I use **PyPi** to install the packages required for this project into [requirements.txt](requirements.txt)
+
+- [Travis](https://travis-ci.org/)
+    - I use **Travis** as an automated builds test to ensure that my builds pass before deployment.
 
 ## Testing
 
@@ -152,12 +155,21 @@ I created a mobile design mockup and a desktop design mockup ofthe websites whic
 
 ### Automated Build Tests
 
-1. TRAVIS
+I used [Travis](https://travis-ci.org/) to test my builds prior to deployments.
+
+1. I set up Travis towards the top of the README.md to show that my builds are still passing through each git push.
+2. I set up Travis in a custom .travis.yml which will install all the python requirements and will test through my applications in each git push.
+
+All of my Travis tests are passing as seen in this README.md
 
 ### Bugs & Fixes
 
-1. Fixing Travis
-2. Fixing ENV with Database
+1. My environmental variables could not be called during live previews/deployments.
+    - I started my fix of this bug by spending time looking through my code, and adjusting the variable keywords.
+    - I then examined my code in settings.py, of which I could not find any import of the environmental variables.
+    - I added 'import env' into the code and pushed my code to github.
+    - Once it worked, I setup my S3 AWS and Heroku before collecting static via 'python3 manage.py collectstatic'.
+    - After the static files were sent to S3 AWS, I commented out my 'import env' before publishing my site.
 
 ## Deployment
 
