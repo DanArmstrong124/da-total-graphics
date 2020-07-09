@@ -82,7 +82,7 @@ I created a mobile design mockup and a desktop design mockup ofthe websites whic
 - - Claims copyright on the site.
 
 ### Features Left to Implement
-- FIX Reset Password
+- FIX Reset Password & Wireframes git bug?
 - CSS Customisation (ADDITIONAL)
 - README
 
