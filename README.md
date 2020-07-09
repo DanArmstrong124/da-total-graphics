@@ -17,7 +17,7 @@ DA TOTAL GRAPHICS is an online store that sells logo graphics, a customer can se
 - As a customer, I want to be able to access and use the site from my mobile device so that I can make purchases from remote locations.
 - As an employee, I want to be able to access a dashboard through the navbar so that I can create or add new products.
 
-I created a mobile design mockup and a desktop design mockup ofthe websites which can be found inside of the [WIREFRAMES]() folder.
+I created a mobile design mockup and a desktop design mockup ofthe websites which can be found inside of the [WIREFRAMES](wireframes) folder.
 
 ## Features
  
@@ -82,7 +82,7 @@ I created a mobile design mockup and a desktop design mockup ofthe websites whic
 - - Claims copyright on the site.
 
 ### Features Left to Implement
-- WIREFRAMES
+- FIX Reset Password
 - CSS Customisation (ADDITIONAL)
 - README
 
