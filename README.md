@@ -70,9 +70,18 @@ I created a mobile design mockup and a desktop design mockup ofthe websites whic
 - Contact Form
 - - Allows the user to send an email after filling in a contact form.
 
-### Features Left to Implement
 - Favicon
+- - Shows my DanCodes logo in the tab.
+
+- Navigation
+- - Allows the user to go between pages.
+- - Allows the user to see the amount of items in their cart.
+- - Responsive for the user to be able to use the website on their phone.
+
 - Footer
+- - Claims copyright on the site.
+
+### Features Left to Implement
 - WIREFRAMES
 - CSS Customisation (ADDITIONAL)
 - README
