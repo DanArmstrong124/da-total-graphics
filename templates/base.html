@@ -40,7 +40,7 @@
                     <i class="fa fa-shopping-cart"></i> Cart
                     </a>
                     {% endif %}
-                    {% if user.is_superuser or user.has_perm('products.add_product') %}
+                    {% if user.is_superuser %}
                     <a class="nav-item nav-link text-danger" href="/admin"><i class="fa fa-cogs"></i> Admin Panel</a>
                     {% endif %}
                     <form action="{% url 'search' %}'" method="get">
