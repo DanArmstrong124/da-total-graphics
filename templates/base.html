@@ -12,7 +12,15 @@
 {% endblock %}
     </head>
     <body>
-        <h1 class="tac" style="background-color:mediumaquamarine;">{% block page_heading %}{% endblock %}</h1>
+        <h1 class="tac" style="background-color:mediumaquamarine;">{% block page_heading %}
+        {% if messages %}
+    <div>
+        {% for message in messages %}
+            <div class="tac"><h4 style="margin: 50px;color: mediumaquamarine;">{{ message}}</h4></div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endblock %}</h1>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="{% url 'index' %}">DA-TOTAL-GRAPHICS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,13 +59,6 @@
             </div>
         </nav>
     <hr>
-    {% if messages %}
-    <div>
-        {% for message in messages %}
-            <div class="tac"><h4 style="margin: 50px;color: mediumaquamarine;">{{ message}}</h4></div>
-        {% endfor %}
-    </div>
-    {% endif %}
 
     {% block page_content %}
 
