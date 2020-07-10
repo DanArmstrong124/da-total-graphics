@@ -13,6 +13,6 @@
     <form method="POST">
         {% csrf_token %}
         {{ registration_form | as_bootstrap }}
-        <button class="btn btn-success" type="submit">Register</button>
+        <button class="btn btn-success col offset-3" style="width: 50%;"" type="submit">Register</button>
     </form>
 {% endblock %}

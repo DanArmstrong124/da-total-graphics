@@ -11,8 +11,8 @@
     <form method="POST">
         {% csrf_token %}
         {{ login_form | as_bootstrap }}
-        <button type="submit" class="btn btn-success">Login</button>
+        <button type="submit" class="btn btn-success col offset-3" style="width: 50%;">Login</button>
     </form>
 
-    <a class="btn btn-secondary" href="{% url 'password_reset' %}">Forgot Password?</a>
+    <a class="btn btn-secondary col offset-3" style="width: 50%;"" href="{% url 'password_reset' %}">Forgot Password?</a>
 {% endblock %}
