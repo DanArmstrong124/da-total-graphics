@@ -84,7 +84,6 @@ I created a mobile design mockup and a desktop design mockup ofthe websites whic
 ### Features Left to Implement
 - FIX Reset Password
 - CSS Customisation (ADDITIONAL)
-- Update Tests
 - README
 
 ## Technologies Used
