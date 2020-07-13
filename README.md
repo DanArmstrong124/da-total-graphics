@@ -27,7 +27,7 @@ I created a mobile design mockup and a desktop design mockup ofthe websites whic
 - - Create account - Users can create an account
 - - Sign in - Users can sign in
 - - Sign out - Users can sign out
-- - Reset Password - Users can request a reset
+- - Reset Password - Users can reset their current password
 - - Profile page - Users can view a basic profile page
 - - Email verify - Users can sign in with email
 - - Purchase verify - Users cannot make a purchase without an account
@@ -82,8 +82,6 @@ I created a mobile design mockup and a desktop design mockup ofthe websites whic
 - - Claims copyright on the site.
 
 ### Features Left to Implement
-- Reset Password automatically:
-- - This will be a feature that I will implement in future projects and work related projects.
 
 ## Technologies Used
 
@@ -161,12 +159,20 @@ Tested by friends and family - Results: All Positive
 
 3. Reset password:
     1. Go to 'Login'
-    2. Press 'Forgotten password'
-    3. Leave form empty and submit
-    4. Verify form doesn't submit
-    5. Fill in form with details
-    6. Submit form
-    7. Verify success message.
+    2. Press 'Forgot password?'
+    3. Submit empty form
+    4. Verify error message
+    5. Enter your accounts email address and press submit
+    6. Verify success message
+    7. Go to your email address
+    8. Follow link inside of email
+    9. Submit empty form
+    10. Verify error message
+    11. Type in new password
+    12. Submit and verify success message
+    13. Press 'Login'
+    14. Enter login details
+    15. Submit and verify success message.
 
 Tested by friends and family - Results: All Positive
 
