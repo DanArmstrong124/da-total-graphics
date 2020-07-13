@@ -27,7 +27,7 @@ I created a mobile design mockup and a desktop design mockup ofthe websites whic
 - - Create account - Users can create an account
 - - Sign in - Users can sign in
 - - Sign out - Users can sign out
-- - Reset Password - Users can reset their passwords
+- - Reset Password - Users can request a reset
 - - Profile page - Users can view a basic profile page
 - - Email verify - Users can sign in with email
 - - Purchase verify - Users cannot make a purchase without an account
@@ -82,8 +82,8 @@ I created a mobile design mockup and a desktop design mockup ofthe websites whic
 - - Claims copyright on the site.
 
 ### Features Left to Implement
-- FIX Reset Password
-- README
+- Reset Password automatically:
+- - This will be a feature that I will implement in future projects and work related projects.
 
 ## Technologies Used
 
@@ -158,12 +158,17 @@ Tested by friends and family - Results: All Positive
     2. Verify that you can now see Register and Sign in.
 
 Tested by friends and family - Results: All Positive
-# FAILED
+
 3. Reset password:
     1. Go to 'Login'
     2. Press 'Forgotten password'
-    3. Enter email
-# FAILED
+    3. Leave form empty and submit
+    4. Verify form doesn't submit
+    5. Fill in form with details
+    6. Submit form
+    7. Verify success message.
+
+Tested by friends and family - Results: All Positive
 
 4. Sign in:
     1. Go to "Login"

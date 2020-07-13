@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block page_title %}Reset - DTG{% endblock %}
+{% block page_header %}Reset Password{% endblock %}
+
+{% block page_content %}
+
+<div class="contact-head tac">
+
+    <div>
+        <h1>Reset Password</h1>
+        <p>Remember you can always press our <strong style="color: green;">LIVE CHAT</strong> button found bottom right for any questions!</p>
+    </div>
+
+</div>
+
+<!--  Contact Form  -->
+<form action="https://formspree.io/xlepojwp" method="POST">
+  <div class="form-group col-xs-12 col-md-6 offset-md-3">
+    <label for="form-name">Full Name</label>
+    <input type="text" class="form-control" id="form-name" placeholder="John Smith" name="form-name" required>
+  </div>
+  <div class="form-group col-xs-12 col-md-6 offset-md-3">
+    <label for="form-email">Email address</label>
+    <input type="email" class="form-control" id="form-email" placeholder="name@example.com" name="form-email" required>
+  </div>
+  <div class="form-group col-xs-12 col-md-6 offset-md-3">
+    <label for="form-comment">Comment</label>
+    <textarea class="form-control" id="form-comment" rows="3" name="form-comment" placeholder="Please give any details that will help us to recover your account" required></textarea>
+    <button class="btn btn-success btn-lg btn-block"><i class="fa fa-thumbs-up"></i> Submit</button>
+  </div>
+</form>
+
+{% endblock %}

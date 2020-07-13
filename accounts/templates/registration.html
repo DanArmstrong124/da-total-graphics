@@ -8,11 +8,12 @@
     
     
 {% block page_content %}
-<p>If you already have an account, you can <a href='{% url 'login' %}' style="color:mediumaquamarine; text-decoration:none;">Sign In</a>!</p>
 
     <form method="POST">
         {% csrf_token %}
         {{ registration_form | as_bootstrap }}
         <button class="btn btn-success col offset-3" style="width: 50%;"" type="submit">Register</button>
     </form>
+
+    <a class="btn btn-secondary col offset-3" style="width: 50%;"" href="{% url 'login' %}">Already have an account?</a>
 {% endblock %}
